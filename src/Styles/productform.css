@@ -1,0 +1,163 @@
+
+body {
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+
+.edit-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.product-form {
+  background: #ffffff;
+  width: 100%;
+  max-width: 520px;
+  padding: 34px 32px;
+  border-radius: 18px;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.06),
+    0 30px 60px rgba(0, 0, 0, 0.04);
+  animation: fadeIn 0.6s ease;
+  transition: transform 0.3s ease;
+}
+
+.product-form:hover {
+  transform: translateY(-2px);
+}
+
+
+.form-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  color: #1e293b;
+  letter-spacing: 0.4px;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #475569;
+}
+
+
+.product-form input,
+.product-form textarea {
+  padding: 13px 14px;
+  border-radius: 12px;
+  border: 1.5px solid #c7d2fe;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.25s ease;
+  background: #ffffff;
+}
+
+.product-form input:hover,
+.product-form textarea:hover {
+  border-color: #a5b4fc;
+}
+
+.product-form input:focus,
+.product-form textarea:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.18);
+}
+
+
+.product-form textarea {
+  min-height: 110px;
+  resize: none;
+}
+
+
+.error {
+  font-size: 12px;
+  color: #dc2626;
+  margin-top: 5px;
+}
+
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+
+.btn.primary {
+  background: linear-gradient(135deg, #4f46e5, #2563eb);
+  color: #ffffff;
+  box-shadow: 0 12px 26px rgba(79, 70, 229, 0.35);
+}
+
+.btn.primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 36px rgba(79, 70, 229, 0.45);
+}
+
+.btn.primary:active {
+  transform: translateY(0);
+}
+
+
+.btn.secondary {
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+.btn.secondary:hover {
+  background: #d1d5db;
+  transform: translateY(-2px);
+}
+
+
+@media (max-width: 480px) {
+  .product-form {
+    padding: 26px 22px;
+  }
+
+  .form-title {
+    font-size: 24px;
+  }
+}

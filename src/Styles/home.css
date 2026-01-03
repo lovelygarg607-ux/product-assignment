@@ -1,0 +1,25 @@
+.view-buttons {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.view-buttons button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  background: #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.view-buttons button:hover {
+  background: #2563eb;
+  color: white;
+}
+
+.view-buttons button.active {
+  background: #2563eb;
+  color: white;
+}
